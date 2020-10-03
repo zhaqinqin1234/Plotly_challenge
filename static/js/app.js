@@ -72,7 +72,7 @@ function buildCharts(sample) {
         }];
 
         Plotly.newPlot("bubble", bubbleChartData, bubbleChartLayout);
-
+//build a bar chart
         var yticks = otu_ids.slice(0,10).map(otuID=>`OTU ${otuID}`).reverse();
         var barData =[{
             y: yticks,
