@@ -61,8 +61,8 @@ function buildCharts(sample) {
         var bubbleChartData = [{
             x: otu_ids,
             y: sample_values,
-            text: otu_labels,
             mode: "markers",
+            text: otu_labels,
             marker: {
                 size: sample_values,
                 color: otu_ids,
