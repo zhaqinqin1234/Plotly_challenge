@@ -37,7 +37,7 @@ function metaData(id) {
         //clear any existing metadata
         panel.html("");
         Object.entries(filtered).forEach(([key, value])=> {
-            panel.append("h6").text(`${key.toUpperCase()}: ${value}`);
+            panel.append("h5").text(`${key}: ${value}`);
 
         });
     
@@ -51,7 +51,7 @@ function buildCharts(sample) {
         var otu_labels=result.otu_labels;
         var sample_values=result.sample_values;
 //build a bubble chart
-        var bubbleChartLayout ={
+        var bubbleChartLayout ={    
             title: "Bacteria Culture Per Sample",
             margin: {t:0},
             hovermode: "closest",
@@ -67,6 +67,7 @@ function buildCharts(sample) {
                 size: sample_values,
                 color: otu_ids,
                 colorscale: "Earth"
+            
             }
         }];
 
