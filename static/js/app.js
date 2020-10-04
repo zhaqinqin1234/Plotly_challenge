@@ -40,6 +40,8 @@ function metaData(id) {
             panel.append("h5").text(`${key}: ${value}`);
 
         });
+        //build the gauge chart
+        buildGauge(filtered.wfreq);
     
     })
 }
